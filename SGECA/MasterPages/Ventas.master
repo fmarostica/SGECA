@@ -1,0 +1,21 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="Ventas.master.cs" Inherits="SGECA.MasterPages.Ventas" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphMenu" runat="server">
+    <div id="menuhoriz">
+        <ul>
+            <li><a class="submenu" href='/Forms/Ventas/FrmVentas.aspx'>Venta</a></li>
+            <li><a class="submenu" href='/Forms/Ventas/FrmVistaComprobante.aspx'>Comprobantes</a></li>
+            <li><a class="submenu" href="/Forms/Ventas/FrmLibroIvaVentas.aspx">Libro IVA Ventas</a></li>
+            <li><a class="submenu" href="/Forms/Ventas/FrmReporteVentas.aspx">Reporte de Ventas</a></li>
+        </ul>
+    </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphContenido" runat="server">
+    <asp:ContentPlaceHolder ID="cphContenido" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphPie" runat="server">
+    <asp:ContentPlaceHolder ID="cphPie" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

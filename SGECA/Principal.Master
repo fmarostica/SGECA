@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server"> </asp:ContentPlaceHolder>
+    <link href="Estilos/StyleSheet.css" rel="stylesheet" />
+    <link href="Estilos/jquery-ui.css" rel="stylesheet" />
+    <link href="Estilos/jquery.jgrowl.css" rel="stylesheet" />
+    <script type="text/javascript" src="/Scripts/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/Scripts/jquery-ui.js"></script>
+    <script type="text/javascript" src="/Scripts/UtilidadesTextBox.js"></script>
+    <script src="/Scripts/jquery.jgrowl.min.js"></script>
+</head>
+
+<body <%--onkeypress="tecla(event)"--%>>
+    <form id="form1" runat="server" style="width: 100%;">
+        <%--<div id="banner">
+	<table>
+    	<tr>
+        	<td><img src="../Imagenes/telesoluciones.png"  height="90" width="200" /></td>
+		</tr>
+	</table>
+</div>--%>
+        <header>
+            <% 
+                If Session("usr") Is Nothing Then
+                    Response.Redirect("/frmLogin.aspx?r=timeout")
+                End If
+            %>
+            
+            <div class="contenedor">
+                <ul class="menu_main">
+                    <!--<li><a href='/forms/ventas/default.aspx'>VENTAS</a></li>-->
+                    <li><a href='/forms/produccion/default.aspx'>PRODUCCION</a></li>
+                    <li><a href='/forms/rrhh/default.aspx'>RRHH</a></li>
+                    <% 
+                        If Session("usr").ToString() = "telesoluciones" Then
+                            %> <li><a href='/forms/gestion/default.aspx'>GESTION</a></li><%
+                        End If
+                    %>
+                    <li><a href='/logout.aspx'>SALIR</a></li>
+                </ul>
+                
+            </div>
+            <%
+                If Session("usr") <> Nothing Then
+                    Response.Write("<p style='font-size: 18px; font-family: HelveticaNeue_Light; padding-left: 12px; padding-top: 15px;'>BIENVENIDO " & Session("usr").ToString().ToUpper() & "</p>")
+                End If
+            %>
+        </header>
+        
+        <%--
+    <div class="contenedor">
+        
+        <menu id='cssmenu'>
+            <ul>
+                <li class='active'><a href='index.html'><span>Menu</span></a></li>
+                <li><a href='#'><span>Inventarios</span></a></li>
+                <li><a class='active' href='/Forms/Ventas/Default.aspx'><span>Ventas</span></a></li>
+                <li><a class='last' href='/Forms/Produccion/Default.aspx'><span>Producción</span></a></li>
+                <li><a class='last' href='/Forms/RRHH/Default.aspx'><span>RRHH</span></a></li>
+                <li class='last'><a href="#"><span>ABM Cliente</span></a></li>
+                <li class='last'><a href='#'><span>ABM Usuario</span></a></li>
+                <li class='last'><a href='#'><span>Contabilidad</span></a></li>
+                <li class='last'><a href='#'><span>Recursos</span></a></li>
+                <li class='last'><a href='#'><span>Listados</span></a></li>
+            </ul>
+	    </menu>
+        --%>
+        <asp:Panel ID="main_panel" CssClass="main" runat="server">
+            <asp:ContentPlaceHolder ID="cphMenu" runat="server"></asp:ContentPlaceHolder>    
+            <asp:ContentPlaceHolder ID="cphContenido" runat="server">
+                
+            </asp:ContentPlaceHolder>                   
+            <asp:ContentPlaceHolder ID="cphPie" runat="server"></asp:ContentPlaceHolder>      
+        </asp:Panel>
+    </form>
+   
+</body>
+</html>

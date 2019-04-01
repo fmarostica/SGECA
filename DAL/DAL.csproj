@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5E00A596-0F95-4CE9-BDC2-B62A8B3FC7E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGECA.DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.6.6.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Empleados.cs" />
+    <Compile Include="Empleados_Adelantos.cs" />
+    <Compile Include="Empleados_grupos.cs" />
+    <Compile Include="Empleados_logs.cs" />
+    <Compile Include="estado_civil.cs" />
+    <Compile Include="Empleados_Gastos.cs" />
+    <Compile Include="Provincias.cs" />
+    <Compile Include="TareasEstados.cs" />
+    <Compile Include="Interfaces\IProducto.cs" />
+    <Compile Include="Producto.cs" />
+    <Compile Include="AlicuotaIva.cs" />
+    <Compile Include="ComprobanteEncabezado.cs" />
+    <Compile Include="ComprobanteItem.cs" />
+    <Compile Include="ConceptoVenta.cs" />
+    <Compile Include="CondicionVenta.cs" />
+    <Compile Include="Interfaces\IAlicuotaIva.cs" />
+    <Compile Include="Interfaces\IConceptoVenta.cs" />
+    <Compile Include="Interfaces\ICondicionVenta.cs" />
+    <Compile Include="Interfaces\IListaPrecio.cs" />
+    <Compile Include="Interfaces\IPuntoVenta.cs" />
+    <Compile Include="Interfaces\ITipoComprobante.cs" />
+    <Compile Include="Interfaces\IPais.cs" />
+    <Compile Include="Interfaces\IGeneral.cs" />
+    <Compile Include="Interfaces\ITipoDocumento.cs" />
+    <Compile Include="Interfaces\ITipoResponsable.cs" />
+    <Compile Include="Interfaces\IVistaComprobante.cs" />
+    <Compile Include="LibroIvaVentas.cs" />
+    <Compile Include="ListaPrecio.cs" />
+    <Compile Include="Pais.cs" />
+    <Compile Include="Cliente.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="Documentos.cs" />
+    <Compile Include="EAcceso.cs" />
+    <Compile Include="EANivel.cs" />
+    <Compile Include="Filtro.cs" />
+    <Compile Include="GestionErrores.cs" />
+    <Compile Include="Interfaces\IDosCampos.cs" />
+    <Compile Include="ItemBusqueda.cs" />
+    <Compile Include="ItemFiltro.cs" />
+    <Compile Include="ItemOrden.cs" />
+    <Compile Include="Parametros.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PuntoVenta.cs" />
+    <Compile Include="Roles.cs" />
+    <Compile Include="Sitios.cs" />
+    <Compile Include="Tareas.cs" />
+    <Compile Include="TipoComprobante.cs" />
+    <Compile Include="TipoDocumento.cs" />
+    <Compile Include="TipoFiltro.cs" />
+    <Compile Include="TipoFiltroTexto.cs" />
+    <Compile Include="TipoResponsable.cs" />
+    <Compile Include="Tipos_Gastos.cs" />
+    <Compile Include="Usuarios.cs" />
+    <Compile Include="Varios.cs" />
+    <Compile Include="Ventas.cs" />
+    <Compile Include="Viaticos.cs" />
+    <Compile Include="VistaComprobantes.cs" />
+    <Compile Include="Xml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Comun\Comun.csproj">
+      <Project>{04e68725-4758-43a3-9c77-2d8d6e914687}</Project>
+      <Name>Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogManager\LogManager.csproj">
+      <Project>{aee72533-ce49-45e7-bc56-102e145fe8a1}</Project>
+      <Name>LogManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dumps\facturador.sql" />
+    <Content Include="MySql.Data.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{36942BDE-C5EC-4ECB-B5A8-D541B70E1319}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SGECA.ControlesComunes</RootNamespace>
+    <AssemblyName>ControlesComunes</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusquedaConFiltro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BusquedaConFiltro.designer.cs">
+      <DependentUpon>BusquedaConFiltro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ComboActivo.cs" />
+    <Compile Include="comparadorTexto.cs" />
+    <Compile Include="ControlTransacciones.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ControlTransacciones.Designer.cs">
+      <DependentUpon>ControlTransacciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Filtro.cs" />
+    <Compile Include="ListItem.cs" />
+    <Compile Include="CtrlSupEdicion.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CtrlSupEdicion.Designer.cs">
+      <DependentUpon>CtrlSupEdicion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LlamaMaestro.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LlamaMaestro.designer.cs">
+      <DependentUpon>LlamaMaestro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paginador.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Paginador.Designer.cs">
+      <DependentUpon>Paginador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Recursos.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Recursos.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ToggleSwitch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ToggleSwitch.Designer.cs">
+      <DependentUpon>ToggleSwitch.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BusquedaConFiltro.resx">
+      <DependentUpon>BusquedaConFiltro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ControlTransacciones.resx">
+      <DependentUpon>ControlTransacciones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CtrlSupEdicion.resx">
+      <DependentUpon>CtrlSupEdicion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LlamaMaestro.resx">
+      <DependentUpon>LlamaMaestro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paginador.resx">
+      <DependentUpon>Paginador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Recursos.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Recursos.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToggleSwitch.resx">
+      <DependentUpon>ToggleSwitch.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnActualizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnAgregar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnCerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEditar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\papelera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\48x48-copy.png" />
+    <Content Include="Resources\btnAgregar_21.png" />
+    <None Include="Resources\Switch_SI.png" />
+    <None Include="Resources\Switch_NO.png" />
+    <None Include="Resources\btnAgregar_211.png" />
+    <None Include="Resources\btnCancelar_23.png" />
+    <Content Include="Resources\btnCancelar_21.png" />
+    <None Include="Resources\copy.png" />
+    <Content Include="Resources\export-to-excel.png" />
+    <Content Include="Resources\minus.bmp" />
+    <Content Include="Resources\plus.bmp" />
+    <Content Include="Resources\search_21.png" />
+    <Content Include="Resources\search_23.png" />
+    <None Include="Resources\search_231.png" />
+    <None Include="Resources\bc-block.png" />
+    <None Include="Resources\accept.png" />
+    <Content Include="Resources\btnNumeral.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Comun\Comun.csproj">
+      <Project>{04e68725-4758-43a3-9c77-2d8d6e914687}</Project>
+      <Name>Comun</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{5e00a596-0f95-4ce9-bdc2-b62a8b3fc7e4}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LogManager\LogManager.csproj">
+      <Project>{aee72533-ce49-45e7-bc56-102e145fe8a1}</Project>
+      <Name>LogManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

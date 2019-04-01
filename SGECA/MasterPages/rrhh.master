@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="rrhh.master.cs" Inherits="SGECA.MasterPages.rrhh" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphMenu" runat="server">
+    <div id="menuhoriz">
+        <ul>
+            <% if (Session["usr"].ToString()!="telesoluciones") { %> <li><a href='/Forms/RRHH/frmCambiarClave.aspx'>CAMBIAR CLAVE</a></li> <% } %>
+            <% if (Session["usr"].ToString()=="telesoluciones") { %> <li><a href='/Forms/RRHH/frmEstados.aspx'>TAREAS</a></li> <% } %>
+            <% if (Session["usr"].ToString()=="telesoluciones" || Session["id"].ToString()=="20") { %> <li><a href='/Forms/RRHH/frmPersonal.aspx'>PERSONAL</a></li> <% } %>
+            <% if (Session["usr"].ToString()=="telesoluciones") { %> <li><a href='/Forms/RRHH/frmGrupos.aspx'>GRUPOS</a></li> <% } %>
+            <% if (Session["usr"].ToString()=="telesoluciones") { %> <li><a href='/Forms/RRHH/frmViaticos.aspx'>VIATICOS</a></li> <% } %>
+            <% if (Session["usr"].ToString()=="telesoluciones" || Session["id"].ToString()=="20") { %>  
+            <li>
+                <a href="#">REPORTES</a>
+                <ul>
+                    <li><a href="/Forms/RRHH/frmReportePersonal.aspx">PERSONAL</a></li>
+                </ul>
+            </li>
+            <% } %>
+        </ul>
+        <label id="mTitle" class="main_title"></label>
+    </div>
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphContenido" runat="server">
+    <asp:ContentPlaceHolder ID="cphContenido" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphPie" runat="server">
+    <asp:ContentPlaceHolder ID="cphPie" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>

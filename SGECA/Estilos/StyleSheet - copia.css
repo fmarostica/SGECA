@@ -1,0 +1,500 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@charset 'UTF-8';
+
+* {
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    padding: 0;
+}
+
+.alineacion {
+    margin-left: 10px;
+}
+
+.alineacion2 {
+    margin-left: 65px;
+}
+
+html{
+    height: 100%;
+}
+
+body {
+    background-image: url(../Imagenes/fondo1.jpg);
+    
+}
+
+#banner {
+    width: 1366px;
+    height: 80px;
+    position: relative;
+    top: -2px;
+    background: -moz-linear-gradient(top, rgba(30,87,153,1) 0%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(30,87,153,1)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* IE10+ */
+    background: linear-gradient(to bottom, rgba(30,87,153,1) 0%,rgba(125,185,232,0) 100%); /* W3C */
+}
+
+.botonera{
+   height: 40px; 
+   border-radius: 0px 0px 7px 7px; 
+   background: #0683A1; 
+   position: relative; 
+   top: 7px;
+}
+
+.buttonMenu {
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    font: 10px Arial, Helvetica, sans-serif;
+    padding: .2em;
+    margin-top: 6.5px;
+    height: 24px;
+    text-shadow: 0 1px 1px rgba(0,0,0,.3);
+    -webkit-border-radius: .5em;
+    -moz-border-radius: .5em;
+    border-radius: .5em;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.2);
+    box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+.btnAgr {
+    position: relative;
+    top: 0.5px;
+}
+
+#contenedor /*Contenedor General de la app Incluyendo el menu principal (Ventas, produccion, rrhh, etc) */
+{
+    width: 100%;
+    max-width: 1366px;
+    text-align: center;
+}
+
+.combo {
+    padding-top: 1px;
+}
+
+#contenido {
+    width: 100%;
+}
+
+.comboboxAliIva {
+    position: relative;
+    top: -3px;
+    left: 0px;
+    height: 51px;
+}
+
+/*Estilo para las grillas (CSS TABLE) */
+
+.CSSTableGenerator {
+    margin: 0px;
+    padding: 0px;
+    box-shadow: 0px 5px 5px #888888;
+    border: 1px solid #000000;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.CSSTableGenerator table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0px;
+    padding: 0px;
+    cursor: default;
+}
+
+.CSSTableGenerator tr:last-child td:last-child {
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.CSSTableGenerator table tr:first-child td:first-child {
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.CSSTableGenerator table tr:first-child td:last-child {
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+.CSSTableGenerator tr:last-child td:first-child {
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.CSSTableGenerator tr:hover td {
+    background-color: #ffffff;
+}
+
+.CSSTableGenerator td {
+    vertical-align: middle;
+    background-color: #ffaa56;
+    border: 1px solid #000000;
+    border-width: 0px 1px 1px 0px;
+    /*text-align: left;*/
+    padding: 4px;
+    font-size: 10px;
+    font-family: Arial;
+    font-weight: normal;
+    color: #000000;
+}
+
+.CSSTableGenerator tr:last-child td {
+    border-width: 0px 1px 0px 0px;
+}
+
+.CSSTableGenerator tr td:last-child {
+    border-width: 0px 0px 1px 0px;
+}
+
+.CSSTableGenerator tr:last-child td:last-child {
+    border-width: 0px 0px 0px 0px;
+}
+
+.CSSTableGenerator th:first-child td {
+    background: -o-linear-gradient(bottom, #bcbab8 5%, #635e59 100%);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #bcbab8), color-stop(1, #635e59) );
+    background: -moz-linear-gradient( center top, #bcbab8 5%, #635e59 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bcbab8", endColorstr="#635e59");
+    background: -o-linear-gradient(top,#bcbab8,635e59);
+    background-color: #bcbab8;
+    border: 0px solid #000000;
+    text-align: center;
+    border-width: 0px 0px 1px 1px;
+    font-size: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.CSSTableGenerator th:first-child:hover td {
+    background: -o-linear-gradient(bottom, #bcbab8 5%, #635e59 100%);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #bcbab8), color-stop(1, #635e59) );
+    background: -moz-linear-gradient( center top, #bcbab8 5%, #635e59 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bcbab8", endColorstr="#635e59");
+    background: -o-linear-gradient(top,#bcbab8,635e59);
+    background-color: #bcbab8;
+}
+
+.CSSTableGenerator th:first-child td:first-child {
+    border-width: 0px 0px 1px 0px;
+}
+
+.CSSTableGenerator th:first-child td:last-child {
+    border-width: 0px 0px 1px 1px;
+}
+
+.columna {
+    background: -o-linear-gradient(bottom, #bcbab8 5%, #635e59 100%);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #bcbab8), color-stop(1, #635e59) );
+    background: -moz-linear-gradient( center top, #bcbab8 5%, #635e59 100% );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bcbab8", endColorstr="#635e59");
+    background: -o-linear-gradient(top,#bcbab8,635e59);
+    background-color: #bcbab8;
+    border: 0px solid #000000;
+    text-align: left;
+    border-width: 0px 0px 1px 1px;
+    font-size: 10px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/*FIN de estilo para las grillas*/
+
+
+/*CSS MENU (Menu principal) */
+#cssmenu ul,
+#cssmenu li,
+#cssmenu a {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+    font-family: 'Lato', sans-serif;
+}
+
+#cssmenu {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background: #36b0b6;
+    background: -moz-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #36b0b6), color-stop(100%, #2a8a8f));
+    background: -webkit-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+    background: -o-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+    background: -ms-linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+    background: linear-gradient(top, #36b0b6 0%, #2a8a8f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@top-color', endColorstr='@bottom-color', GradientType=0);
+    height: 38px;
+}
+    
+#cssmenu ul:before {
+    content: '';
+    display: block;
+}
+
+#cssmenu ul:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+#cssmenu li {
+    float: left;
+    margin: 0 5px 0 0;
+}
+
+#cssmenu li a {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    padding: 8px 15px 9px 15px;
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid transparent;
+    font-size: 16px;
+}
+
+#cssmenu li.active {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #36b0b6;
+}
+
+#cssmenu li.active a {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    display: block;
+    background: #1e6468;
+    border: 1px solid #133e40;
+    -moz-box-shadow: inset 0 5px 10px #133e40;
+    -webkit-box-shadow: inset 0 5px 10px #133e40;
+    box-shadow: inset 0 5px 10px #133e40;
+}
+
+#cssmenu li:hover {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #36b0b6;
+}
+
+#cssmenu li:hover a {
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    display: block;
+    background: #1e6468;
+    border: 1px solid #133e40;
+    -moz-box-shadow: inset 0 5px 10px #133e40;
+    -webkit-box-shadow: inset 0 5px 10px #133e40;
+    box-shadow: inset 0 5px 10px #133e40;
+}
+/*Fin CSS Menu*/
+
+.dialog
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -400px;
+    margin-top: -250px;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 5px 2px #000; 
+}
+
+fieldset
+{
+    text-align: left;
+    margin: 5px;
+    padding: 3px;
+    height: 100%;
+}
+
+fieldset legend
+{
+    padding: 5px;
+}
+
+form {
+    width: 400px;
+    font: normal bold 12px Verdana, Arial;
+}
+
+form label {
+    display: inline-block;
+    width: 100px;
+}
+
+form input {
+    display: inline-block;
+    /*margin-bottom: 10px;*/
+}
+
+.input1 {
+    display: inline-block;
+    width: 200px;
+    height: 25px;
+    padding: 0 15px;
+    background: #36b0b6; /* browsers that don't support rgba */
+    background: rgba(54,176,182,.8);
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px 6px 6px 6px;
+    border: 1px solid #3d3d3d; /* browsers that don't support rgba */
+    border: 1px solid rgba(255,255,255,.15);
+    -moz-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.1) inset;
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0,0,0,.1);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+    margin-bottom: 3px;
+}
+
+.input1:focus
+{
+    outline: 0;
+    background: #34888C;
+}
+
+.lblField
+{
+    display: inline-block;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+    width: 100%;
+    max-width: 100px;
+}
+
+/* Cuadro principal (El blanco con bordes negros que contiene los distintos componentes) */
+.main{
+    border:solid; 
+    border-radius:10px; 
+    background-color:#FFF;
+    overflow: hidden;
+    min-height: 450px;
+}
+
+/* Menu horizontal que se encuentra dentro de las distintas secciones */
+#menuhoriz
+{
+    min-height: 25px; 
+    background-color: #0D4E5D;
+}
+
+#menuhoriz ul li {
+    display: inline;
+    padding: 2px 7px; /*Separar el texto*/
+    margin: 5px; /* Separar los botones */
+    position: relative;
+    top: 4px;
+}
+
+#menuhoriz ul li:hover {
+    background-color: rgba(30,87,153,1); /* Color de fondo sobre el boton */
+    border-radius: 10px;
+    cursor: pointer; /* cambiar el aspecto del puntero */
+}
+
+/* Fin menu horizontal */
+
+
+.Panel1021 {
+    width: 96%;
+    margin: 5px auto;
+    padding: 10px;
+    box-shadow: 0px 5px 5px #888888;
+    border: 1px solid #000000;
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    -moz-border-radius-topright: 0px;
+    -webkit-border-top-right-radius: 0px;
+    border-top-right-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    -webkit-border-top-left-radius: 0px;
+    border-top-left-radius: 0px;
+}
+
+.prueba {
+    position: relative;
+    top: 6px;
+}
+
+#tabla-contenido {
+    width: 100%;
+    height: 40px;
+    border-right: 10px,10px,0px,0px;
+    background-color: #b6ff00;
+}
+
+.inputFrom {
+    text-align: right;
+}
+
+::-webkit-input-placeholder {
+    text-align: left;
+}
+
+.submenu {
+    font-size: 12px;
+    color: #ffffff;
+    width: 100%;
+}
+
+.TablaDetalles{
+    text-align: left;
+    width: 100%;
+}

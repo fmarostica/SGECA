@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="facturadorDataSet" targetNamespace="http://tempuri.org/facturadorDataSet.xsd" xmlns:mstns="http://tempuri.org/facturadorDataSet.xsd" xmlns="http://tempuri.org/facturadorDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="facturadorConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="facturadorConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SGECA.ColaDeImpresion.Properties.Settings.GlobalReference.Default.facturadorConnectionString" Provider="MySql.Data.MySqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="facturadorDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="facturadorDataSet" msprop:Generator_UserDSName="facturadorDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_libroivaventas" msprop:Generator_TableClassName="vw_libroivaventasDataTable" msprop:Generator_TableVarName="tablevw_libroivaventas" msprop:Generator_TablePropName="vw_libroivaventas" msprop:Generator_RowDeletingName="vw_libroivaventasRowDeleting" msprop:Generator_RowChangingName="vw_libroivaventasRowChanging" msprop:Generator_RowEvHandlerName="vw_libroivaventasRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_libroivaventasRowDeleted" msprop:Generator_UserTableName="vw_libroivaventas" msprop:Generator_RowChangedName="vw_libroivaventasRowChanged" msprop:Generator_RowEvArgName="vw_libroivaventasRowChangeEvent" msprop:Generator_RowClassName="vw_libroivaventasRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cen_fecha" msprop:Generator_ColumnVarNameInTable="columncen_fecha" msprop:Generator_ColumnPropNameInRow="cen_fecha" msprop:Generator_ColumnPropNameInTable="cen_fechaColumn" msprop:Generator_UserColumnName="cen_fecha" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="tre_abreviatura" msprop:Generator_ColumnVarNameInTable="columntre_abreviatura" msprop:Generator_ColumnPropNameInRow="tre_abreviatura" msprop:Generator_ColumnPropNameInTable="tre_abreviaturaColumn" msprop:Generator_UserColumnName="tre_abreviatura" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="3" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tre_codigo" msprop:Generator_ColumnVarNameInTable="columntre_codigo" msprop:Generator_ColumnPropNameInRow="tre_codigo" msprop:Generator_ColumnPropNameInTable="tre_codigoColumn" msprop:Generator_UserColumnName="tre_codigo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tre_nombre" msprop:Generator_ColumnVarNameInTable="columntre_nombre" msprop:Generator_ColumnPropNameInRow="tre_nombre" msprop:Generator_ColumnPropNameInTable="tre_nombreColumn" msprop:Generator_UserColumnName="tre_nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cli_RazonSocial" msprop:Generator_ColumnVarNameInTable="columncli_RazonSocial" msprop:Generator_ColumnPropNameInRow="cli_RazonSocial" msprop:Generator_ColumnPropNameInTable="cli_RazonSocialColumn" msprop:Generator_UserColumnName="cli_RazonSocial" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cli_CUIT" msprop:Generator_ColumnVarNameInTable="columncli_CUIT" msprop:Generator_ColumnPropNameInRow="cli_CUIT" msprop:Generator_ColumnPropNameInTable="cli_CUITColumn" msprop:Generator_UserColumnName="cli_CUIT" type="xs:long" minOccurs="0" />
+              <xs:element name="cen_neto" msprop:Generator_ColumnVarNameInTable="columncen_neto" msprop:Generator_ColumnPropNameInRow="cen_neto" msprop:Generator_ColumnPropNameInTable="cen_netoColumn" msprop:Generator_UserColumnName="cen_neto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IVA21monto" msprop:Generator_ColumnVarNameInTable="columnIVA21monto" msprop:Generator_ColumnPropNameInRow="IVA21monto" msprop:Generator_ColumnPropNameInTable="IVA21montoColumn" msprop:Generator_UserColumnName="IVA21monto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IVA21porcentaje" msprop:Generator_ColumnVarNameInTable="columnIVA21porcentaje" msprop:Generator_ColumnPropNameInRow="IVA21porcentaje" msprop:Generator_ColumnPropNameInTable="IVA21porcentajeColumn" msprop:Generator_UserColumnName="IVA21porcentaje" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IVA21neto" msprop:Generator_ColumnVarNameInTable="columnIVA21neto" msprop:Generator_ColumnPropNameInRow="IVA21neto" msprop:Generator_ColumnPropNameInTable="IVA21netoColumn" msprop:Generator_UserColumnName="IVA21neto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IVA105monto" msprop:Generator_ColumnVarNameInTable="columnIVA105monto" msprop:Generator_ColumnPropNameInRow="IVA105monto" msprop:Generator_ColumnPropNameInTable="IVA105montoColumn" msprop:Generator_UserColumnName="IVA105monto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IVA105porcentaje" msprop:Generator_ColumnVarNameInTable="columnIVA105porcentaje" msprop:Generator_ColumnPropNameInRow="IVA105porcentaje" msprop:Generator_ColumnPropNameInTable="IVA105porcentajeColumn" msprop:Generator_UserColumnName="IVA105porcentaje" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IVA105neto" msprop:Generator_ColumnVarNameInTable="columnIVA105neto" msprop:Generator_ColumnPropNameInRow="IVA105neto" msprop:Generator_ColumnPropNameInTable="IVA105netoColumn" msprop:Generator_UserColumnName="IVA105neto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IVA27monto" msprop:Generator_ColumnVarNameInTable="columnIVA27monto" msprop:Generator_ColumnPropNameInRow="IVA27monto" msprop:Generator_ColumnPropNameInTable="IVA27montoColumn" msprop:Generator_UserColumnName="IVA27monto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IVA27porcentaje" msprop:Generator_ColumnVarNameInTable="columnIVA27porcentaje" msprop:Generator_ColumnPropNameInRow="IVA27porcentaje" msprop:Generator_ColumnPropNameInTable="IVA27porcentajeColumn" msprop:Generator_UserColumnName="IVA27porcentaje" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IVA27neto" msprop:Generator_ColumnVarNameInTable="columnIVA27neto" msprop:Generator_ColumnPropNameInRow="IVA27neto" msprop:Generator_ColumnPropNameInTable="IVA27netoColumn" msprop:Generator_UserColumnName="IVA27neto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IVA0monto" msprop:Generator_ColumnVarNameInTable="columnIVA0monto" msprop:Generator_ColumnPropNameInRow="IVA0monto" msprop:Generator_ColumnPropNameInTable="IVA0montoColumn" msprop:Generator_UserColumnName="IVA0monto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IVA0porcentaje" msprop:Generator_ColumnVarNameInTable="columnIVA0porcentaje" msprop:Generator_ColumnPropNameInRow="IVA0porcentaje" msprop:Generator_ColumnPropNameInTable="IVA0porcentajeColumn" msprop:Generator_UserColumnName="IVA0porcentaje" type="xs:decimal" minOccurs="0" />
+              <xs:element name="IVA0neto" msprop:Generator_ColumnVarNameInTable="columnIVA0neto" msprop:Generator_ColumnPropNameInRow="IVA0neto" msprop:Generator_ColumnPropNameInTable="IVA0netoColumn" msprop:Generator_UserColumnName="IVA0neto" type="xs:decimal" minOccurs="0" />
+              <xs:element name="cen_total" msprop:Generator_ColumnVarNameInTable="columncen_total" msprop:Generator_ColumnPropNameInRow="cen_total" msprop:Generator_ColumnPropNameInTable="cen_totalColumn" msprop:Generator_UserColumnName="cen_total" type="xs:decimal" minOccurs="0" />
+              <xs:element name="cen_neto_string" msprop:Generator_ColumnVarNameInTable="columncen_neto_string" msprop:Generator_ColumnPropNameInRow="cen_neto_string" msprop:Generator_ColumnPropNameInTable="cen_neto_stringColumn" msprop:Generator_UserColumnName="cen_neto_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IVA21monto_string" msprop:Generator_ColumnVarNameInTable="columnIVA21monto_string" msprop:Generator_ColumnPropNameInRow="IVA21monto_string" msprop:Generator_ColumnPropNameInTable="IVA21monto_stringColumn" msprop:Generator_UserColumnName="IVA21monto_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IVA21porcentaje_string" msprop:Generator_ColumnVarNameInTable="columnIVA21porcentaje_string" msprop:Generator_ColumnPropNameInRow="IVA21porcentaje_string" msprop:Generator_ColumnPropNameInTable="IVA21porcentaje_stringColumn" msprop:Generator_UserColumnName="IVA21porcentaje_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IVA21neto_string" msprop:Generator_ColumnVarNameInTable="columnIVA21neto_string" msprop:Generator_ColumnPropNameInRow="IVA21neto_string" msprop:Generator_ColumnPropNameInTable="IVA21neto_stringColumn" msprop:Generator_UserColumnName="IVA21neto_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IVA105monto_string" msprop:Generator_ColumnVarNameInTable="columnIVA105monto_string" msprop:Generator_ColumnPropNameInRow="IVA105monto_string" msprop:Generator_ColumnPropNameInTable="IVA105monto_stringColumn" msprop:Generator_UserColumnName="IVA105monto_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IVA105porcentaje_string" msprop:Generator_ColumnVarNameInTable="columnIVA105porcentaje_string" msprop:Generator_ColumnPropNameInRow="IVA105porcentaje_string" msprop:Generator_ColumnPropNameInTable="IVA105porcentaje_stringColumn" msprop:Generator_UserColumnName="IVA105porcentaje_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IVA105neto_string" msprop:Generator_ColumnVarNameInTable="columnIVA105neto_string" msprop:Generator_ColumnPropNameInRow="IVA105neto_string" msprop:Generator_ColumnPropNameInTable="IVA105neto_stringColumn" msprop:Generator_UserColumnName="IVA105neto_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IVA27monto_string" msprop:Generator_ColumnVarNameInTable="columnIVA27monto_string" msprop:Generator_ColumnPropNameInRow="IVA27monto_string" msprop:Generator_ColumnPropNameInTable="IVA27monto_stringColumn" msprop:Generator_UserColumnName="IVA27monto_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IVA27porcentaje_string" msprop:Generator_ColumnVarNameInTable="columnIVA27porcentaje_string" msprop:Generator_ColumnPropNameInRow="IVA27porcentaje_string" msprop:Generator_ColumnPropNameInTable="IVA27porcentaje_stringColumn" msprop:Generator_UserColumnName="IVA27porcentaje_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IVA27neto_string" msprop:Generator_ColumnVarNameInTable="columnIVA27neto_string" msprop:Generator_ColumnPropNameInRow="IVA27neto_string" msprop:Generator_ColumnPropNameInTable="IVA27neto_stringColumn" msprop:Generator_UserColumnName="IVA27neto_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IVA0monto_string" msprop:Generator_ColumnVarNameInTable="columnIVA0monto_string" msprop:Generator_ColumnPropNameInRow="IVA0monto_string" msprop:Generator_ColumnPropNameInTable="IVA0monto_stringColumn" msprop:Generator_UserColumnName="IVA0monto_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IVA0porcentaje_string" msprop:Generator_ColumnVarNameInTable="columnIVA0porcentaje_string" msprop:Generator_ColumnPropNameInRow="IVA0porcentaje_string" msprop:Generator_ColumnPropNameInTable="IVA0porcentaje_stringColumn" msprop:Generator_UserColumnName="IVA0porcentaje_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="45" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="IVA0neto_string" msprop:Generator_ColumnVarNameInTable="columnIVA0neto_string" msprop:Generator_ColumnPropNameInRow="IVA0neto_string" msprop:Generator_ColumnPropNameInTable="IVA0neto_stringColumn" msprop:Generator_UserColumnName="IVA0neto_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cen_total_string" msprop:Generator_ColumnVarNameInTable="columncen_total_string" msprop:Generator_ColumnPropNameInRow="cen_total_string" msprop:Generator_ColumnPropNameInTable="cen_total_stringColumn" msprop:Generator_UserColumnName="cen_total_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="51" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tdo_codigo" msprop:Generator_ColumnVarNameInTable="columntdo_codigo" msprop:Generator_ColumnPropNameInRow="tdo_codigo" msprop:Generator_ColumnPropNameInTable="tdo_codigoColumn" msprop:Generator_UserColumnName="tdo_codigo" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tdo_nombre" msprop:Generator_ColumnVarNameInTable="columntdo_nombre" msprop:Generator_ColumnPropNameInRow="tdo_nombre" msprop:Generator_ColumnPropNameInTable="tdo_nombreColumn" msprop:Generator_UserColumnName="tdo_nombre" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tco_letra" msprop:Generator_ColumnVarNameInTable="columntco_letra" msprop:Generator_ColumnPropNameInRow="tco_letra" msprop:Generator_ColumnPropNameInTable="tco_letraColumn" msprop:Generator_UserColumnName="tco_letra" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="tco_descripcion" msprop:Generator_ColumnVarNameInTable="columntco_descripcion" msprop:Generator_ColumnPropNameInRow="tco_descripcion" msprop:Generator_ColumnPropNameInTable="tco_descripcionColumn" msprop:Generator_UserColumnName="tco_descripcion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cen_totalIva" msprop:Generator_ColumnVarNameInTable="columncen_totalIva" msprop:Generator_ColumnPropNameInRow="cen_totalIva" msprop:Generator_ColumnPropNameInTable="cen_totalIvaColumn" msprop:Generator_UserColumnName="cen_totalIva" type="xs:decimal" minOccurs="0" />
+              <xs:element name="cen_numerocompleto" msprop:Generator_ColumnVarNameInTable="columncen_numerocompleto" msprop:Generator_ColumnPropNameInRow="cen_numerocompleto" msprop:Generator_ColumnPropNameInTable="cen_numerocompletoColumn" msprop:Generator_UserColumnName="cen_numerocompleto" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="19" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="cen_fecha_string" msprop:Generator_ColumnVarNameInTable="columncen_fecha_string" msprop:Generator_ColumnPropNameInRow="cen_fecha_string" msprop:Generator_ColumnPropNameInTable="cen_fecha_stringColumn" msprop:Generator_UserColumnName="cen_fecha_string" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

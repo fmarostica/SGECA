@@ -1,0 +1,24 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Principal.Master" AutoEventWireup="true" CodeBehind="Gestion.master.cs" Inherits="SGECA.MasterPages.Gestion" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+        <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="cphMenu" runat="server">
+    <div id="menuhoriz">
+        <ul>
+            <li><a href='/Forms/Gestion/frmGastos.aspx'>TIPOS DE GASTOS</a></li>
+            <li><a href='/Forms/Gestion/frmSitios.aspx'>SITIOS</a></li>
+            <li><a href='/Forms/Gestion/frmLogs.aspx'>LOGS</a></li>
+        </ul>
+        <label id="mTitle" class="main_title"></label>
+        
+    </div>
+    
+</asp:Content>
+<asp:Content ID="Content3" ContentPlaceHolderID="cphContenido" runat="server">
+    <asp:ContentPlaceHolder ID="cphContenido" runat="server">
+
+    </asp:ContentPlaceHolder>
+</asp:Content>
+<asp:Content ID="Content4" ContentPlaceHolderID="cphPie" runat="server">
+    <asp:ContentPlaceHolder ID="cphPie" runat="server"></asp:ContentPlaceHolder>
+</asp:Content>
